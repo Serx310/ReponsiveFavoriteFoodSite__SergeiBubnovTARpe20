@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Patrick+Hand&display=swap');
+
+:root{
+    --headings: #101209;
+    --text:  #16331E;
+    --heading-font: 'Patrick Hand', cursive;
+    --text-font: 'Caveat', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bab86c;
+    font-family: var(--text-font-family);
+    color: var(--text);
+    text-align: center;
+}
+.main{
+    width: 75%;
+    margin: 0 auto;
+}
+ .pasta_pic{
+    width: 25%;
+    float: left;
+    margin-right: 2rem; 
+} 
+
+h1{
+    font-family: var(--heading-font);
+    color: var(--headings);
+    text-align: center;
+}
+
+h2{
+    font-family: var(--heading-font);
+    color: var(--headings);
+    
+}
+
+.ingredients{
+    width: 50%;
+    text-align: right; 
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.classical_recipe  {
+    display: inline-block;
+    /* width: 7%; */
+    background-color: #199319;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    border-radius: 4%;
+    /* margin-left: 43rem; */
+    /* margin-top: 10px;
+    margin-bottom: 1cm; */
+    margin: 0 auto;
+}
+
+.classical_recipe:hover{
+    background-color: #182628;
+}
+
+.ingredients ul{
+    float: right;
+    font-size: 20px;
+}
+
+.preparation{
+    text-align: center;
+}
+
+.preparation ol {
+    list-style-position: inside;
+    font-size: 20px;
+}
+
+ol{
+    font-family: var(--text-font);
+}
+
+ul{
+    font-family: var(--text-font);
+    list-style-type: none;
+}
+
+.bottom_container ul {
+    display: inline-block;
+    align-items: center;
+}
+
+.bottom_container{
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.bottom-link{
+    display: inline-block;
+    font-family: var(--text-font);
+    align-items: center;
+    margin: 1rem;
+}
+
+.copyright{
+    font-family: var(--heading-font);
+    /* margin-left: 30rem;
+    margin-top: 15px; */
+    font-size: 1.4rem;
+}
+
+.li-wrapper{
+    font-size: 1.3rem;
+    display: inline-block;
+    margin: 0 auto;
+    width: auto;
+}
+
+.li-wrapper a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+@media(min-width: 768px){
+    .bottom-link ul li{
+        display: block;
+        font-family: var(--text-font);
+        align-items: center;
+    }
+
+    .pasta_pic{
+        float: none;
+        margin-right: 0;
+    } 
+}
+
+@media(min-width: 480px){
+    .bottom-link ul li{
+        display: block;
+        font-family: var(--text-font);
+        align-items: center;
+    }
+
+
+    .pasta_pic{
+        float: none;
+        margin-right: 0;
+    } 
+}
